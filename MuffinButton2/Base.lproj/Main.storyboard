@@ -58,6 +58,21 @@
                                     <action selector="addBacon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gpt-bc-9HX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHL-in-240">
+                                <rect key="frame" x="34" y="300" width="144" height="30"/>
+                                <state key="normal" title="Buy a factory">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFactory:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MNP-7b-nzq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3I-hl-sUc">
+                                <rect key="frame" x="93" y="385" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -65,6 +80,8 @@
                         <outlet property="baconButton" destination="AAq-QR-Gc1" id="fta-ks-AwL"/>
                         <outlet property="baconLabel" destination="CYs-2V-KH1" id="EZj-Bt-4LV"/>
                         <outlet property="baconNumberLabel" destination="Quq-tB-oJV" id="y0Z-iJ-d9a"/>
+                        <outlet property="factoryButton" destination="CHL-in-240" id="KkT-SM-pBc"/>
+                        <outlet property="factoryNumberLabel" destination="Q3I-hl-sUc" id="ni7-mT-g3c"/>
                         <outlet property="muffinButton" destination="x5J-hA-cCY" id="IqP-rR-YZ8"/>
                         <outlet property="muffinNumberLabel" destination="Vr5-sO-MeP" id="Y2J-o9-0TH"/>
                         <outlet property="muffinsLabel" destination="N70-RU-jJN" id="Ltg-3z-4jb"/>

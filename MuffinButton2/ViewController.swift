@@ -15,10 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var muffinButton: UIButton!
     @IBOutlet weak var baconLabel: UILabel!
 
+    @IBOutlet weak var factoryNumberLabel: UILabel!
+    @IBOutlet weak var factoryButton: UIButton!
     @IBOutlet weak var baconNumberLabel: UILabel!
     @IBOutlet weak var baconButton: UIButton!
+    
+    
     var muffins = 0
     var bacon = 0
+    var factories = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +31,9 @@ class ViewController: UIViewController {
         makeInvisible(muffinsLabel)
         makeInvisible(baconLabel)
         makeInvisible(baconButton)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timedUpgrade"), userInfo: nil, repeats: true)
     }
+    
 
     @IBAction func addMuffin(sender: AnyObject) {
         muffins++
@@ -48,6 +55,11 @@ class ViewController: UIViewController {
         updateLabels()
     }
     
+    @IBAction func addFactory(sender: AnyObject) {
+        factories++
+        factoryNumberLabel.text=String(factories)
+    }
+
     func updateLabels(){
         if muffins>0{
             muffinsLabel.enabled=1
@@ -58,6 +70,11 @@ class ViewController: UIViewController {
             baconNumberLabel.text = String(bacon)
         }
         
+    }
+    
+    func timedUpgrade(){
+        muffins=muffins+factories
+        updateLabels()
     }
     
     func makeInvisible(label: UILabel)
