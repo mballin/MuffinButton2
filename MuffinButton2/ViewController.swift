@@ -14,22 +14,38 @@ class ViewController: UIViewController {
     @IBOutlet weak var muffinNumberLabel: UILabel!
     @IBOutlet weak var muffinButton: UIButton!
     @IBOutlet weak var baconLabel: UILabel!
-    
+
+    @IBOutlet weak var baconNumberLabel: UILabel!
+    @IBOutlet weak var baconButton: UIButton!
     var muffins = 0
+    var bacon = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         makeInvisible(muffinsLabel)
         makeInvisible(baconLabel)
+        makeInvisible(baconButton)
     }
 
     @IBAction func addMuffin(sender: AnyObject) {
         muffins++
         makeVisible(muffinsLabel)
         updateLabels()
+        if muffins>9{
+            makeVisible(baconButton)
+        }
         
         
+    }
+    
+    @IBAction func addBacon(sender: AnyObject) {
+        if muffins<10{
+            return
+        }
+        bacon++
+        muffins-=10
+        updateLabels()
     }
     
     func updateLabels(){
@@ -37,6 +53,11 @@ class ViewController: UIViewController {
             muffinsLabel.enabled=1
         }
         muffinNumberLabel.text = String(muffins)
+        if bacon>0{
+            makeVisible(baconLabel)
+            baconNumberLabel.text = String(bacon)
+        }
+        
     }
     
     func makeInvisible(label: UILabel)

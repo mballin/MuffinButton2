@@ -14,6 +14,7 @@
 		87631CA719E0E2A400C60AD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87631CA519E0E2A400C60AD2 /* LaunchScreen.xib */; };
 		87631CB319E0E2A400C60AD2 /* MuffinButton2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87631CB219E0E2A400C60AD2 /* MuffinButton2Tests.swift */; };
 		87631CBE19E0E40100C60AD2 /* muffin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87631CBD19E0E40100C60AD2 /* muffin.jpg */; };
+		87631CC019E0E92A00C60AD2 /* bacon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 87631CBF19E0E92A00C60AD2 /* bacon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		87631CB119E0E2A400C60AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87631CB219E0E2A400C60AD2 /* MuffinButton2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuffinButton2Tests.swift; sourceTree = "<group>"; };
 		87631CBD19E0E40100C60AD2 /* muffin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = muffin.jpg; path = ../../../../Desktop/muffin.jpg; sourceTree = "<group>"; };
+		87631CBF19E0E92A00C60AD2 /* bacon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bacon.jpg; path = ../../../../Desktop/bacon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		87631CBC19E0E3E900C60AD2 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				87631CBF19E0E92A00C60AD2 /* bacon.jpg */,
 				87631CBD19E0E40100C60AD2 /* muffin.jpg */,
 			);
 			name = images;
@@ -207,6 +210,7 @@
 				87631CA719E0E2A400C60AD2 /* LaunchScreen.xib in Resources */,
 				87631CBE19E0E40100C60AD2 /* muffin.jpg in Resources */,
 				87631CA419E0E2A400C60AD2 /* Images.xcassets in Resources */,
+				87631CC019E0E92A00C60AD2 /* bacon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				87631CB819E0E2A400C60AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87631CB919E0E2A400C60AD2 /* Build configuration list for PBXNativeTarget "MuffinButton2Tests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				87631CBB19E0E2A400C60AD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

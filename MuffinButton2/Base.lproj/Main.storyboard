@@ -29,19 +29,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bacon: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYs-2V-KH1">
-                                <rect key="frame" x="62" y="68" width="66" height="21"/>
+                                <rect key="frame" x="62" y="70" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Quq-tB-oJV">
-                                <rect key="frame" x="136" y="68" width="42" height="21"/>
+                                <rect key="frame" x="136" y="70" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5J-hA-cCY">
-                                <rect key="frame" x="62" y="210" width="171" height="140"/>
+                                <rect key="frame" x="29" y="192" width="66" height="60"/>
                                 <state key="normal" title="Button" image="muffin.jpg">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -49,11 +49,22 @@
                                     <action selector="addMuffin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RCL-fZ-dd6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-QR-Gc1">
+                                <rect key="frame" x="114" y="192" width="64" height="58"/>
+                                <state key="normal" title="Button" image="bacon.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBacon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gpt-bc-9HX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="baconButton" destination="AAq-QR-Gc1" id="fta-ks-AwL"/>
                         <outlet property="baconLabel" destination="CYs-2V-KH1" id="EZj-Bt-4LV"/>
+                        <outlet property="baconNumberLabel" destination="Quq-tB-oJV" id="y0Z-iJ-d9a"/>
                         <outlet property="muffinButton" destination="x5J-hA-cCY" id="IqP-rR-YZ8"/>
                         <outlet property="muffinNumberLabel" destination="Vr5-sO-MeP" id="Y2J-o9-0TH"/>
                         <outlet property="muffinsLabel" destination="N70-RU-jJN" id="Ltg-3z-4jb"/>
@@ -64,6 +75,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bacon.jpg" width="151" height="82"/>
         <image name="muffin.jpg" width="170" height="140"/>
     </resources>
 </document>
