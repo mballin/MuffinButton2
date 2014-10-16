@@ -24,14 +24,20 @@ class ViewController: UIViewController {
     var muffins = 0
     var bacon = 0
     var factories = 0
+    var runBefore = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if !runBefore{
         makeInvisible(muffinsLabel)
         makeInvisible(baconLabel)
         makeInvisible(baconButton)
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timedUpgrade"), userInfo: nil, repeats: true)
+            NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("timedUpgrade"), userInfo: nil, repeats: true)
+            runBefore=true
+        }
+        
     }
     
 
